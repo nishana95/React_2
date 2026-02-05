@@ -1,0 +1,13 @@
+import react from 'react';
+
+function ChildButtonClick({count,setCount}){
+    return(
+        <div>
+            <button onClick={() => setCount(count + 1)}>Increase</button>
+            <button onClick={() => setCount(count - 1)}>Decrease</button>
+        </div>
+    )
+}
+
+
+export default ChildButtonClick;
