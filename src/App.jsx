@@ -9,8 +9,6 @@ import ParentButton from './ParentButton.jsx'
 
 
 function App() {
-
-
   return (
     <>
         <Usestate />
