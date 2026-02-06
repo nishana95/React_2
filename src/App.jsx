@@ -6,6 +6,11 @@ import Usestate from './usestate.jsx'
 import ColorButton from './color_button.jsx'
 import ParentComponent from './parent.jsx'
 import ParentButton from './ParentButton.jsx'
+import UseEffect from './UseEffect.jsx'
+import UserList from './axios.jsx'
+import UseMemo from './UseMemo1.jsx'
+import UseCallback from './UseCallback1.jsx'
+import FilteredList from './FilteredList.jsx'
 
 
 function App() {
@@ -15,6 +20,11 @@ function App() {
         <ColorButton />
         <ParentComponent />
         <ParentButton />
+        <UseEffect />
+        <UserList />
+        <UseMemo />
+        <UseCallback />
+        <FilteredList />
     </>
   )
 }
