@@ -11,6 +11,7 @@ import UserList from './axios.jsx'
 import UseMemo from './UseMemo1.jsx'
 import UseCallback from './UseCallback1.jsx'
 import FilteredList from './FilteredList.jsx'
+import FetchDisplay from './FetchDisplay.jsx'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <UseMemo />
         <UseCallback />
         <FilteredList />
+        <FetchDisplay />
     </>
   )
 }
