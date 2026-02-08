@@ -1,11 +1,12 @@
 import React from "react";
-import { useState ,useCallback} from "react";
+import { useState, useCallback } from "react";
 
-function UseCallback({increment}){
+function UseCallback({ increment }) {
     console.log("Rendered");
-    return(
+    return (
         <div>
-            <button onClick={increment}>Increment</button>
+            <button style={{ backgroundColor: "lightblue" }}
+                onClick={increment}>Increment</button>
         </div>
     )
 
