@@ -12,12 +12,18 @@ import UseMemo from './UseMemo1.jsx'
 import UseCallback from './UseCallback1.jsx'
 import FilteredList from './FilteredList.jsx'
 import FetchDisplay from './FetchDisplay.jsx'
+import Form from './form.jsx'
+import FormValidation from './formvalidation.jsx'
+import Pagination from './pagination.jsx'
+import Grid from './grid.jsx'
+import LoginForm from './LoginForm.jsx'
+import FetchDisplayPagination from './FetchDisplay_Pagination.jsx'
 
 
 function App() {
   return (
     <>
-        <Usestate />
+        {/* <Usestate />
         <ColorButton />
         <ParentComponent />
         <ParentButton />
@@ -25,8 +31,15 @@ function App() {
         <UserList />
         <UseMemo />
         <UseCallback />
-        <FilteredList />
-        <FetchDisplay />
+        <FilteredList />*/}
+        {/* <FetchDisplay /> */}
+        {/* <Grid /> */}
+        {/* <Form />  */}
+        {/* <FormValidation /> */}
+        {/* <Pagination /> */}
+        <LoginForm />
+        <FetchDisplayPagination /> 
+
     </>
   )
 }

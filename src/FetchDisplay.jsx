@@ -13,7 +13,7 @@ function FetchDisplay() {
     return (
         <div>
             {data && data.length > 0 ? (
-                <table border="1">
+                <table className="border-1">
                     <thead>
                         <tr>
                             <th>User ID</th>
