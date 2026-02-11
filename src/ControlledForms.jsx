@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function Form() {
+function ControlledForms() {
     const [name, setName] = useState("");
 
     function handleChange(event) {
@@ -22,4 +22,4 @@ function Form() {
 
 
 
-export default Form;
+export default ControlledForms;

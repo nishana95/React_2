@@ -1,4 +1,16 @@
 import { useState } from 'react'
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import About from "./About.jsx"
+import Contact from "./Contact.jsx"
+import Home from "./Home.jsx"
+import Navbar from "./Navigation.jsx"
+import Dashboard from './Dashboard.jsx'
+import Settings from './Settings.jsx'
+import Profile from './Profile.jsx'
+import User from './User.jsx'
+import Post from './Post.jsx'
+import Blog from './blog.jsx'
+import ContextAPI from './ContextAPI.jsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 // import './App.css'
@@ -12,7 +24,7 @@ import UseMemo from './UseMemo1.jsx'
 import UseCallback from './UseCallback1.jsx'
 import FilteredList from './FilteredList.jsx'
 import FetchDisplay from './FetchDisplay.jsx'
-import Form from './form.jsx'
+import ControlledForms from './ControlledForms.jsx'
 import FormValidation from './formvalidation.jsx'
 import Pagination from './pagination.jsx'
 import Grid from './grid.jsx'
@@ -34,12 +46,29 @@ function App() {
         <FilteredList />*/}
         {/* <FetchDisplay /> */}
         {/* <Grid /> */}
-        {/* <Form />  */}
+        {/* <ControlledForms />  */}
         {/* <FormValidation /> */}
         {/* <Pagination /> */}
-        <LoginForm />
-        <FetchDisplayPagination /> 
-
+        {/* <LoginForm /> */}
+        {/* <FetchDisplayPagination />  */}
+        {/* <ContextAPI/> */}
+        
+          <BrowserRouter>
+              <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/ab" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/dashboard" element={<Dashboard />} >
+                <Route path="settings" element={<Settings />} />
+                <Route path="profile" element={<Profile />} />
+              </Route>
+              <Route path="/user/:id" element={<User/>}/>
+              <Route path="/blog" element={<Blog />} >
+                <Route path=":id" element={<Post />} />
+              </Route>
+            </Routes>
+          </BrowserRouter>
     </>
   )
 }
