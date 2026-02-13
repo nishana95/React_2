@@ -10,7 +10,10 @@ import Profile from './Profile.jsx'
 import User from './User.jsx'
 import Post from './Post.jsx'
 import Blog from './blog.jsx'
+import UserRedux from './UserRedux.jsx'
+import ReduxToolkit from './ReduxToolkit'
 import ContextAPI from './ContextAPI.jsx'
+import ThemeSetting from './ThemeContext.jsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 // import './App.css'
@@ -52,6 +55,9 @@ function App() {
         {/* <LoginForm /> */}
         {/* <FetchDisplayPagination />  */}
         {/* <ContextAPI/> */}
+        {/* <ThemeSetting/> */}
+        {/* <UserRedux/> */}
+        <ReduxToolkit/>
         
           <BrowserRouter>
               <Navbar />
